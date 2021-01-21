@@ -1,0 +1,52 @@
+header, a {
+    color:brown;
+}
+
+h1 {
+    color:lightgreen;
+    font-size:x-large;
+    width:auto;
+    text-align:left;
+    font-weight:bold;
+}
+
+h2 {
+    color:lightcoral;
+    font-size:large;
+    width:auto;
+    text-align:left;
+}
+
+section, a {
+    color:brown;
+    font-size:medium;
+    width:407px;
+    text-align:left;
+}
+
+.listmod {
+    list-style:none;
+    padding-left:0;
+    text-align:center;
+}
+
+a.linkmod:link, a.linkmod:visited {
+    text-decoration:none;
+    background-color:lightgreen;
+    border-color:brown;
+    border-width:1px;
+    border-style:solid;
+    color:brown;
+    display:block;
+    width:350px;
+    text-align:center;
+    margin:0px;
+}
+
+a.linkmod:hover, a.linkmod:active {
+    background-color:lightcoral;
+}
+
+a.linkmod2:hover, a.linkmod2:active {
+    color:lightgreen;
+}
