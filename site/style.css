@@ -1,3 +1,7 @@
+body {
+    font-family: Garamond, serif;
+}
+
 header, a {
     color:brown;
 }
@@ -17,30 +21,10 @@ h2 {
     text-align:left;
 }
 
-section, a {
-    color:brown;
-    font-size:medium;
-    width:407px;
-    text-align:left;
-}
-
 .listmod {
     list-style:none;
     padding-left:0;
     text-align:center;
-}
-
-a.linkmod:link, a.linkmod:visited {
-    text-decoration:none;
-    background-color:lightgreen;
-    border-color:brown;
-    border-width:1px;
-    border-style:solid;
-    color:brown;
-    display:block;
-    width:350px;
-    text-align:center;
-    margin:0px;
 }
 
 a.linkmod:hover, a.linkmod:active {
@@ -49,4 +33,54 @@ a.linkmod:hover, a.linkmod:active {
 
 a.linkmod2:hover, a.linkmod2:active {
     color:lightgreen;
+}
+
+@media (min-width: 407px) {
+    section {
+        width: 482px;
+        color:brown;
+        font-size:medium;
+        text-align:left;
+    }
+
+    p, a {
+        color:brown;
+        font-size:medium;
+        width:407px;
+        text-align:left;
+    }
+
+    a.linkmod:link, a.linkmod:visited {
+        text-decoration:none;
+        background-color:lightgreen;
+        border-color:brown;
+        border-width:1px;
+        border-style:solid;
+        color:brown;
+        display:block;
+        width:350px;
+        text-align:center;
+        margin:0px;
+    }
+
+    .wrapText {
+        float: right;
+        margin: 10px;
+    }
+
+    @media (min-height: 720px) {
+        #scroll {
+            border: 1px solid brown;
+            padding: 5px;
+            height: 175px;
+            overflow: auto;
+            box-sizing: border-box;
+            width: 407px;
+        }
+    }
+}
+
+#twocolumn {
+    float: left;
+    padding: 10px;
 }
