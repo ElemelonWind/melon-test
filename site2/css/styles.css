@@ -1,7 +1,106 @@
-.row {
-    margin-bottom: 15px;
+body {
+    font-size: 45%;
+    color: #344966;
+    background-color :#F0F4EF;
+    font-family: 'Garamond', serif;
+    width: 100%;
 }
-.row > div {
-    border: 2px solid red;
-    background-color: gray;
+
+/** HEADER **/
+#header-nav {
+    background-color: #E6AACE;
+    border-radius: 0;
+    border: 0;
+    width: 100%;
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+@media (max-width: 530px) {
+    #header-nav {
+        width: 530px;
+    }
+    
+    .container-fluid {
+        width: 530px;
+    }
+}
+
+.navbar-header {
+    width: max-content;
+}
+
+#logo-img {
+    background-image: url('../images/IMG_6611[1].png'); 
+    background-repeat: no-repeat;
+    background-size: 150px;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 50%
+}
+
+.navbar-brand {
+    padding-top: 50px;
+    width: min-content;
+  }
+
+/* .navbar-brand {
+    padding-top: 50px;
+    width: min-content;
+    margin-right: 0px;
+} */
+
+.navbar-brand h1 { /* Website name */
+    font-size: 2em;
+    color: #344966;
+    font-family: 'Garamond', serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #0D1821;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+}
+
+.navbar-brand a:hover, .navbar-brand a:link, .navbar-brand a:visited, .navbar-brand a:active {
+    text-decoration: none;
+}
+
+.navbar-brand p { /* Data nerd */
+    text-transform: uppercase;
+    font-size: .9em;
+    margin-top: 15px;
+}
+
+.navbar-brand p span {
+    vertical-align: middle;
+}
+
+.navbar-toggler {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+@media (min-width: 992px) {
+    .navbar-collapse {
+        width: max-content;
+        position: absolute;
+        top: 100px;
+        right: 20px;
+        font-size: 222%
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-collapse {
+        width: max-content;
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        font-size: 222%
+    }
 }
