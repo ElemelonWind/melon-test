@@ -65,8 +65,14 @@ body {
     line-height: .75;
 }
 
-.navbar-brand a:hover, .navbar-brand a:link, .navbar-brand a:visited, .navbar-brand a:active {
+a:link, a:visited, a:active {
     text-decoration: none;
+    color: #344966;
+    font-weight: 550;
+}
+
+a:hover {
+    background: #BFCC94;
 }
 
 .navbar-brand p { /* Data nerd */
@@ -79,10 +85,27 @@ body {
     vertical-align: middle;
 }
 
+@media (min-width: 992px) {
+    #email {
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        font-size: 222%;
+    }
+
+    .email-link {
+        padding: 0.5em;
+    }
+}
+
 .navbar-toggler {
     position: absolute;
     top: 10px;
     right: 10px;
+}
+
+button {
+    padding: 1px 2px !important;
 }
 
 @media (min-width: 992px) {
@@ -99,8 +122,13 @@ body {
     .navbar-collapse {
         width: max-content;
         position: absolute;
-        top: 50px;
-        right: 20px;
-        font-size: 222%
+        top: 51px;
+        right: 13px;
+        font-size: 222%;
+    }
+
+    .nav-link {
+        padding-left: 8px !important;
+        padding-right: 8px !important;
     }
 }
