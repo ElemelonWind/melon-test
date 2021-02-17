@@ -66,8 +66,17 @@ body {
 }
 
 @media (max-width: 530px) {
+    .navbar-brand {
+        padding-top: 30px;
+    }
+    
     .navbar-brand h1 {
         font-size: 7vw;
+    }
+
+    .subtitle-p {
+        margin-block-start: 3vw !important;
+        margin-block-end: 5vw !important;
     }
 
     .navbar-subtitle {
@@ -148,10 +157,15 @@ button {
 }
 
 @media(max-width: 530px) {
+    .navbar-toggler-icon {
+        width: 5vw;
+        height: 5vw;
+    }
+    
     .navbar-collapse {
         width: max-content;
         position: absolute;
-        top: 51px;
+        top: 45px;
         right: 13px;
         font-size: 2.5vw;
     }
@@ -163,5 +177,9 @@ button {
 
     .pic-icon {
         width: 2.5vw;
+    }
+
+    .nav-link {
+        padding: 4px !important;
     }
 }
