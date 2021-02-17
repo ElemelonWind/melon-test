@@ -18,7 +18,7 @@ body {
     width: 100%;
 }
 
-@media (max-width: 530px) {
+/* @media (max-width: 530px) {
     #header-nav {
         width: 530px;
     }
@@ -26,7 +26,7 @@ body {
     .container-fluid {
         width: 530px;
     }
-}
+} */
 
 .navbar-header {
     width: max-content;
@@ -63,6 +63,20 @@ body {
     margin-top: 0;
     margin-bottom: 0;
     line-height: .75;
+}
+
+@media (max-width: 530px) {
+    .navbar-brand h1 {
+        font-size: 7vw;
+    }
+
+    .navbar-subtitle {
+        font-size: 3vw;
+    }
+
+    .subtitle-img {
+        width: 5vw;
+    }
 }
 
 a:link, a:visited, a:active {
@@ -118,7 +132,7 @@ button {
     }
 }
 
-@media (max-width: 991px) {
+@media (min-width: 531px), (max-width: 991px) {
     .navbar-collapse {
         width: max-content;
         position: absolute;
@@ -130,5 +144,24 @@ button {
     .nav-link {
         padding-left: 8px !important;
         padding-right: 8px !important;
+    }
+}
+
+@media(max-width: 530px) {
+    .navbar-collapse {
+        width: max-content;
+        position: absolute;
+        top: 51px;
+        right: 13px;
+        font-size: 2.5vw;
+    }
+
+    .nav-link {
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+    }
+
+    .pic-icon {
+        width: 2.5vw;
     }
 }
