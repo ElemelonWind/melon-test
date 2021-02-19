@@ -1,3 +1,11 @@
+/*
+NOTES
+max screen width: 2560px
+min screen width: 320px
+max screen height: 1440px
+min screen height: 480px
+*/
+
 body {
     font-size: 45%;
     color: #344966;
@@ -128,7 +136,7 @@ a:hover {
 }
 
 button {
-    padding: 1px 2px !important;
+    padding: 1px 1px !important;
 }
 
 @media (min-width: 992px) {
@@ -141,7 +149,7 @@ button {
     }
 }
 
-@media (min-width: 531px), (max-width: 991px) {
+@media (min-width: 531px) and (max-width: 991px) {
     .navbar-collapse {
         width: max-content;
         position: absolute;
@@ -157,6 +165,11 @@ button {
 }
 
 @media(max-width: 530px) { /* ~330 px is where things get wonky and I'm leavin it that way *shrug* */
+    button {
+        padding: 0px !important;
+        border: 0px !important;
+    }
+    
     .navbar-toggler-icon {
         width: 5vw;
         height: 5vw;
@@ -182,4 +195,147 @@ button {
     .nav-link {
         padding: 4px !important;
     }
+}
+
+/**Home Page**/
+#main-content {
+    padding: 12px !important;
+}
+
+.container {
+    max-width: none !important;
+}
+
+/* @media (min-width: 1499) {
+    .jumbotron {
+        text-align: center;
+    }
+} */
+
+/* @media (min-width: 1200px) and (max-width: 1399px) {
+    .jumbotron {
+        background: url('../images/Computing-feat-1200.jpg') no-repeat;
+        height: 630px;
+        box-shadow: 0 0 50px #E6AACE;
+        border: 2px solid #344966;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .jumbotron {
+        background: url('../images/Computing-feat-992.jpg') no-repeat;
+        height: 520px;
+        box-shadow: 0 0 50px #E6AACE;
+        border: 2px solid #344966;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .jumbotron {
+        background: url('../images/Computing-feat-768.jpg') no-repeat;
+        height: 402px;
+        box-shadow: 0 0 50px #E6AACE;
+        border: 2px solid #344966;
+    }
+}
+
+@media (max-width: 767px) {
+
+} */
+
+.jumbotron {
+    box-shadow: 0 0 10px #BFCC94;
+    border-radius: 10px;
+    /* border: 2px solid #344966; */
+}
+
+h1.display-4 {
+    padding: 10px;
+    padding-bottom: 5px;
+    font-size: 30px;
+    color: #344966;
+    margin: 0px !important;
+    text-align: center;
+}
+
+.lead {
+    padding: 10px;
+    padding-top: 5px;
+    font-size: 20px;
+    color: #344966;
+    margin: 0px !important;
+    text-align: center;
+}
+
+.my-4 {
+    margin: 10px !important;
+}
+
+@media(max-width: 530px) {
+    h1.display-4 {
+        font-size: 5vw;
+        padding: 2vw;
+        padding-bottom: 1vw;
+    }
+
+    .lead {
+        font-size: 4vw;
+        padding: 2vw;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+    }
+}
+
+.row {
+    --bs-gutter-x: 0 !important;
+}
+
+#education-tile, #experience-tile, #projects-tile, #hiring-tile {
+    height: 350px;
+    margin: 10px;
+    position: relative;
+    border: 2px solid #0D1821;
+    overflow: hidden;
+}
+
+#education-tile:hover, #experience-tile:hover, #projects-tile:hover, #hiring-tile:hover{
+    box-shadow: 0 2px 10px 2px #E6AACE;
+}
+
+#education-tile {
+    background: url('../images/IMG_6690.PNG') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#experience-tile {
+    background: url('../images/IMG_6694.PNG') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#projects-tile {
+    background: url('../images/IMG_6692.PNG') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#hiring-tile {
+    background: url('../images/IMG_6693.PNG') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#education-tile span, #experience-tile span, #projects-tile span, #hiring-tile span {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    font-size: 2.2em;
+    text-transform: uppercase;
+    background-color: #0D1821;
+    color: #F0F4EF;
+    opacity: .8;
 }
