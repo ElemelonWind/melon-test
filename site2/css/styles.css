@@ -96,13 +96,13 @@ body {
     }
 }
 
-a:link, a:visited, a:active {
+a:link, a:visited {
     text-decoration: none;
     color: #344966;
     font-weight: 550;
 }
 
-#green-bg:hover {
+.active, #green-bg:hover {
     background: #BFCC94;
 }
 
@@ -144,7 +144,7 @@ button {
         width: max-content;
         position: absolute;
         top: 100px;
-        right: 20px;
+        right: 15px;
         font-size: 222%
     }
 }
@@ -154,7 +154,7 @@ button {
         width: max-content;
         position: absolute;
         top: 51px;
-        right: 13px;
+        right: 8px;
         font-size: 222%;
     }
 
@@ -179,7 +179,7 @@ button {
         width: max-content;
         position: absolute;
         top: 10vw;
-        right: 4vw;
+        right: 3vw;
         font-size: 2.5vw;
     }
 
@@ -418,6 +418,8 @@ h1.display-7 {
     margin: 32px;
     width: 15%;
     height: 15%;
+    border-radius: 20px;
+    border-style: outset;
 }
 
 .wrap-text-left {
@@ -425,6 +427,8 @@ h1.display-7 {
     margin: 32px;
     width: 15%;
     height: 15%;
+    border-radius: 20px;
+    border-style: inset;
 }
 
 .nav-menu {
@@ -512,4 +516,10 @@ h1.display-7 {
 
 #nav-menu-link:hover {
     text-shadow: .25px .25px .25px #E6AACE;
+}
+
+.hr-divider {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
 }
