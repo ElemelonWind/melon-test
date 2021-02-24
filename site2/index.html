@@ -9,6 +9,7 @@
         <title>Cindy's Portfolio</title>
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     </head>
     <body id=top>
         <header>
@@ -31,7 +32,42 @@
                             </p>
                         </div>
 
-                        <span id="email">
+                        <div class="dropdown d-block d-md-none">
+                            <button class="btn btn-labeled btn-dark" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="btn-label"><i class="fa fa-bars fa-lg"></i></span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                              <li><a class="dropdown-item active" href="index.html"><i class="fa fa-home fa-sm"></i><span> Home</span></a></li>
+                              <li><a class="dropdown-item" href="education.html"><i class="fa fa-book fa-sm"></i>
+                                <span>Education</span></a></li>
+                              <li><a class="dropdown-item" href="experience.html"><i class="fa fa-star fa-sm"></i>
+                                <span>Experience</span></a></li>
+                              <li><a class="dropdown-item" href="projects.html"><i class="fa fa-pencil fa-sm"></i>
+                                <span> Projects</span></a></li>
+                              <li><a class="dropdown-item" href="hiring.html"><i class="fa fa-dollar fa-sm"></i><span> Hiring Info</span></a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="mailto:c.yang.2023@gmail.com"><i class="fa fa-phone fa-sm"></i>
+                                <span> Contact</span></a></li>
+                            </ul>
+                          </div>
+
+                          <div class="d-none d-md-block nav-bar">
+                              <hr>
+                              <div class="row text-center">
+                                <a class="col-md-2 active" href="index.html"><i class="fa fa-home fa-md"></i><span> Home</span></a>
+                                <a class="col-md-2" href="education.html"><i class="fa fa-book fa-md"></i>
+                                    <span>Education</span></a>
+                                <a class="col-md-2" href="experience.html"><i class="fa fa-star fa-md"></i>
+                                        <span>Experience</span></a>
+                                <a class="col-md-2" href="projects.html"><i class="fa fa-pencil fa-md"></i>
+                                            <span> Projects</span></a>
+                                <a class="col-md-2" href="hiring.html"><i class="fa fa-dollar fa-md"></i><span> Hiring Info</span></a>
+                                <a class="col-md-2" href="mailto:c.yang.2023@gmail.com"><i class="fa fa-phone fa-md"></i>
+                                                <span> Contact</span></a>
+                              </div>
+                            <hr>
+                        </div>
+                        <!--<span id="email">
                             <a href="mailto:c.yang.2023@gmail.com" id="green-bg" class="email-link d-none d-lg-block">
                                 <img src="images/download1 (1).png" alt="Email" width="17">
                                 <span>Contact Me</span>
@@ -64,7 +100,7 @@
                                     <span>Projects</span>
                                 </a>
                               </li>
-                              <!--<li class="nav-item dropdown">
+                              <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                   Dropdown
                                 </a>
@@ -74,9 +110,9 @@
                                   <li><hr class="dropdown-divider"></li>
                                   <li><a class="dropdown-item" href="#">Something else here</a></li>
                                 </ul>
-                              </li>-->
+                              </li>
                             </ul>
-                          </div>
+                          </div>-->
                     </div>
                 </div>
             </nav>
@@ -91,9 +127,8 @@
                     This is my website, which I created to serve as a 
                     portfolio of my education and experience in the 
                     computer science field. Feel free to explore!
-                    (and if you're looking to hire, come back to the 
-                    main page and click the 'hiring info' tile for more 
-                    information!)
+                    (and if you have any suggestions on how to improve 
+                    this site, use the 'contact' tab!)
                 </p>
                 <hr class="my-4">
                 <div id="home-tiles" class="row">

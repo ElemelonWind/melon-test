@@ -37,7 +37,7 @@ body {
 } */
 
 .navbar-header {
-    width: max-content;
+    width: 100%;
 }
 
 #logo-img {
@@ -116,7 +116,7 @@ a:link, a:visited {
     vertical-align: middle;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 766px) {
     #email {
         position: absolute;
         top: 50px;
@@ -422,6 +422,15 @@ h1.display-7 {
     border-style: outset;
 }
 
+.wrap-text-right-v2 {
+    float: right;
+    margin: 32px;
+    width: 12%;
+    height: 12%;
+    border-radius: 20px;
+    border-style: outset;
+}
+
 .wrap-text-left {
     float: left;
     margin: 32px;
@@ -458,7 +467,7 @@ h1.display-7 {
         padding-bottom: 1vw;
     }
 
-    .wrap-text-right, .wrap-text-left {
+    .wrap-text-right, .wrap-text-left, .wrap-text-right-v2 {
         margin: 2vw;
     }
 }
@@ -477,7 +486,7 @@ h1.display-7 {
         padding-bottom: 1vw;
     }
 
-    .wrap-text-right, .wrap-text-left {
+    .wrap-text-right, .wrap-text-left, .wrap-text-right-v2 {
         margin: 2vw;
     }
 
@@ -495,12 +504,22 @@ h1.display-7 {
         width: 20%;
         height: 20%;
     }
+
+    .wrap-text-right-v2 {
+        width: 17%;
+        height: 17%;
+    }
 }
 
 @media (max-width: 766px) {
     .wrap-text-right, .wrap-text-left {
         width: 25%;
         height: 25%;
+    }
+
+    .wrap-text-right-v2 {
+        width: 22%;
+        height: 22%;
     }
 }
 
@@ -522,4 +541,49 @@ h1.display-7 {
     width: 50%;
     margin-left: 25%;
     margin-right: 25%;
+}
+
+/**TESTING**/
+.dropdown {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.btn-label {
+	position: relative;
+	display: inline-block;
+    padding: 5px 10px;
+	border-radius: 3px 0 0 3px;
+}
+ 
+.btn-labeled {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.btn-dark, .btn-dark:hover, .btn-dark:active, .btn-dark:visited, .btn-dark:focus, .btn-dark.active{
+    background-color: #E6AACE !important;
+    border-width: 0px;
+    color: #344966 !important;
+}
+
+.btn {
+	margin-bottom: 10px;
+}
+.dropdown-menu {
+    background-color: #F0F4EF;
+    color: #344966;
+}
+.dropdown-item:hover, .dropdown-item:focus, .dropdown-item.active, .dropdown-item:active, .col-md-2:hover, .col-md-2:focus, .col-md-2.active, .col-md-2:active {
+    background-color: #BFCC94;
+    color: #344966 !important;
+}
+.nav-bar {
+    font-size: medium;
+    width: 100%;
+}
+.sticky {
+    position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 0;
+        background-color: #F0F4EF;
 }

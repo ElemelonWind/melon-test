@@ -9,6 +9,7 @@
         <title>Cindy's Portfolio</title>
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     </head>
     <body>
         <header>
@@ -31,57 +32,72 @@
                             </p>
                         </div>
 
-                        <span id="email">
-                            <a href="mailto:c.yang.2023@gmail.com" id="green-bg" class="email-link d-none d-lg-block">
-                                <img src="images/download1 (1).png" alt="Email" width="17">
-                                <span>Contact Me</span>
-                            </a>
-                        </span>
-
-                        <button class="navbar-toggler navbar-light" type="button" 
-                        data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
-                        aria-controls="navbarSupportedContent" aria-expanded="false" 
-                        aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul id="nav-list" class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a id="green-bg" class="nav-link" aria-current="page" href="education.html">
-                                        <img src="images/downloadagain (1).png" alt="Home" width="15" class="pic-icon">
-                                        <span>Education</span>
-                                    </a>
-                                  </li>
-                                <li id="green-bg" class="nav-item">
-                                <a class="nav-link" aria-current="page" href="experience.html">
-                                    <img src="images/Studio_Project.png" alt="Info" width="15" class="pic-icon">
-                                    <span>Experience</span>
-                                </a>
-                              </li>
-                              <li id="green-bg" class="nav-item">
-                                <a class="nav-link" href="projects.html">
-                                    <img src="images/imageedit_4_7156968716.png" alt="Star" width="15" class="pic-icon">
-                                    <span>Projects</span>
-                                </a>
-                              </li>
-                              <!--<li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  Dropdown
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                  <li><a class="dropdown-item" href="#">Action</a></li>
-                                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                                  <li><hr class="dropdown-divider"></li>
-                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                              </li>-->
+                        <div class="dropdown d-block d-md-none">
+                            <button class="btn btn-labeled btn-dark" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="btn-label"><i class="fa fa-bars fa-lg"></i></span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                              <li><a class="dropdown-item" href="index.html"><i class="fa fa-home fa-sm"></i><span> Home</span></a></li>
+                              <li><a class="dropdown-item" href="education.html"><i class="fa fa-book fa-sm"></i>
+                                <span>Education</span></a></li>
+                              <li><a class="dropdown-item" href="experience.html"><i class="fa fa-star fa-sm"></i>
+                                <span>Experience</span></a></li>
+                              <li><a class="dropdown-item" href="projects.html"><i class="fa fa-pencil fa-sm"></i>
+                                <span> Projects</span></a></li>
+                              <li><a class="dropdown-item active" href="hiring.html"><i class="fa fa-dollar fa-sm"></i><span> Hiring Info</span></a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="mailto:c.yang.2023@gmail.com"><i class="fa fa-phone fa-sm"></i>
+                                <span> Contact</span></a></li>
                             </ul>
                           </div>
+
+                          <div class="d-none d-md-block nav-bar">
+                              <hr>
+                              <div class="row text-center">
+                                <a class="col-md-2" href="index.html"><i class="fa fa-home fa-md"></i><span> Home</span></a>
+                                <a class="col-md-2" href="education.html"><i class="fa fa-book fa-md"></i>
+                                    <span>Education</span></a>
+                                <a class="col-md-2" href="experience.html"><i class="fa fa-star fa-md"></i>
+                                        <span>Experience</span></a>
+                                <a class="col-md-2" href="projects.html"><i class="fa fa-pencil fa-md"></i>
+                                            <span> Projects</span></a>
+                                <a class="col-md-2 active" href="hiring.html"><i class="fa fa-dollar fa-md"></i><span> Hiring Info</span></a>
+                                <a class="col-md-2" href="mailto:c.yang.2023@gmail.com"><i class="fa fa-phone fa-md"></i>
+                                                <span> Contact</span></a>
+                              </div>
+                            <hr>
+                        </div>
                     </div>
                 </div>
             </nav>
         </header>
-
+        <div id="main-content" class="container">
+            <div class="jumbotron">
+                <h1 id="education-title" class="text-center">
+                    Hiring Information
+                </h1>
+                <img class="wrap-text-right-v2" src="images/IMG_6718.PNG">
+                <p class="lead1">
+                    I'm open for hiring for website design, tutoring, Minecraft plugins, and discord bot commissions!
+                    I'm also glad to take collabs for any projects you'd like to work on with me. In addition, if you 
+                    just want to talk with a fellow cs nerd, about books, music, video games, or literally anything, feel free 
+                    to contact me! I love making new friends :)
+                </p>
+                <p class="lead1">
+                    My preferred contact is either through <a href="mailto:c.yang.2023@gmail.com">email</a> or through 
+                    discord - you can add me at ElemelonWind#6881. You can also check the footer of the website for my 
+                    other socials, if you'd prefer to contact me through Facebook or Instagram. I usually reply within 
+                    24 hours, and if I don't you may resend the message.
+                </p>
+                <p class="lead1">
+                    As a student looking for experience, prices are <b><i>completely</i></b> negotiable! For a good
+                    cause, I'm definitely open to serving you free of charge. For more professional hiring (or 
+                    if I directed you to this site through an application), you can 
+                    download my resume <a href="files/Computer Science Resume (1).pdf" download="CindyYangResume">
+                    here</a>. I look forward to hearing from you!
+                </p>
+            </div><!-- End of jumbotron-->
+        </div><!--End of #main-content-->
         <footer class="panel-footer">
             <div class="container">
                 <div class="row">
