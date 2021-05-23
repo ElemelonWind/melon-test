@@ -2,12 +2,10 @@
     var dc = {};
     var doc = window.location.pathname.split("/").pop();
     console.log(doc);
-    if(doc == undefined) {
-        var homeHtml = "snippets/index-snippet.html";
-    }
-    else {
-        doc = doc.substring(0, doc.indexOf("."));
-        var homeHtml = "snippets/" + doc + "-snippet.html";
+    doc = doc.substring(0, doc.indexOf("."));
+    var homeHtml = "snippets/" + doc + "-snippet.html";
+    if(homeHtml == "snippets/-snippet.html") {
+        homeHtml = "snippets/index-snippet.html";
     }
 
     var insertHtml = function(selector, html) {
