@@ -1,6 +1,7 @@
 (function(global) {
     var dc = {};
     var doc = window.location.pathname.split("/").pop();
+    console.log(doc);
     if(doc == undefined) {
         var homeHtml = "snippets/index-snippet.html";
     }
