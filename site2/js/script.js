@@ -1,8 +1,13 @@
 (function(global) {
     var dc = {};
     var doc = window.location.pathname.split("/").pop();
-    doc = doc.substring(0, doc.indexOf("."));
-    var homeHtml = "snippets/" + doc + "-snippet.html";
+    if(doc == undefined) {
+        var homeHtml = "snippets/index-snippet.html";
+    }
+    else {
+        doc = doc.substring(0, doc.indexOf("."));
+        var homeHtml = "snippets/" + doc + "-snippet.html";
+    }
 
     var insertHtml = function(selector, html) {
         var targetElem = document.querySelector(selector);
