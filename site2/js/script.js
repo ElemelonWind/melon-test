@@ -4,9 +4,9 @@
     console.log(doc);
     doc = doc.substring(0, doc.indexOf("."));
     var homeHtml = "snippets/" + doc + "-snippet.html";
-    if(homeHtml == "snippets/-snippet.html") {
-        homeHtml = "snippets/index-snippet.html";
-    }
+    // if(homeHtml === "snippets/-snippet.html") {
+    //     homeHtml = "snippets/index-snippet.html";
+    // }
 
     var insertHtml = function(selector, html) {
         var targetElem = document.querySelector(selector);
