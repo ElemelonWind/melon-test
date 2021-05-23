@@ -35,7 +35,8 @@
                     var version = "Site Version " + res.version;
                     var update = "Last Updated: " + res.lastUpdated;
                     console.log(version + update);
-                    if(window.screen.width >= 1200) document.getElementById("email").innerText = version;
+                    //if(window.screen.width >= 1200) 
+                    document.getElementById("email").innerText = version;
                     document.getElementById("update").innerText = update;
                 }); 
         
