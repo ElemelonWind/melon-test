@@ -30,7 +30,7 @@
 
     global.$dc = dc;
 
-        $ajaxUtils.sendGetRequest("/files/versions.json",
+        $ajaxUtils.sendGetRequest("files/versions.json",
                 function(res) {
                     var version = "Site Version " + res.version;
                     var update = "Last Updated: " + res.lastUpdated;
