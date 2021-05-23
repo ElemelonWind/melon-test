@@ -26,19 +26,20 @@
             function(responseText) {
                 document.querySelector("#main-content").innerHTML = responseText;
             }, false);
+            $ajaxUtils.sendGetRequest("files/versions.json",
+            function(res) {
+                var version = "Site Version " + res.version;
+                var update = "Last Updated: " + res.lastUpdated;
+                console.log(version + update);
+                //if(window.screen.width >= 1200) 
+                document.getElementById("email").innerText = version;
+                document.getElementById("update").innerText = update;
+            }); 
     });
 
     global.$dc = dc;
 
-        $ajaxUtils.sendGetRequest("files/versions.json",
-                function(res) {
-                    var version = "Site Version " + res.version;
-                    var update = "Last Updated: " + res.lastUpdated;
-                    console.log(version + update);
-                    //if(window.screen.width >= 1200) 
-                    document.getElementById("email").innerText = version;
-                    document.getElementById("update").innerText = update;
-                }); 
+        
         
         // var version = "Site Version 0.8.1 (Beta)";
         // document.getElementById("email").innerText = version;
